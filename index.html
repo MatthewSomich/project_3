@@ -16,30 +16,31 @@
 	</header>
 
 <div class="main_content">
-		<div>
+		
 			<p class="signup">Sign up for our newsletter</p>
 			<p class="signup-text">Get the latest news on how your code is doing right in your inbox</p>
-		</div>
 		
+
 	
 		<form name="sign_up_form" action="file:///Users/mattsomich/Desktop/Treehouse_code/project_3/index.html" method="post">
-
-			<div>
+			
+			<fieldset>
+			
 				<p class="contact">Contact Information</p>
-			</div>
-			<div>
+
 				<label for="full_name">Full Name</label>
-				<input class="text_input" id="full_name" type="text" name="full_name" placeholder="Required">
+				<input class="text_input" id="full_name" type="text" name="full_name" placeholder="Required" required>
 				<label for="mail">Email Address</label>
-				<input class="text_input" id="mail" type="email" name="mail" placeholder="Required">
+				<input class="text_input" id="mail" type="email" name="mail" placeholder="Required" required>
 				<label for="phone">Phone Number</label>
-				<input class="text_input" id="phone" type="text" name="phone">
+				<input class="text_input" id="phone" type="tel" name="phone" placeholder="(xxx)xxx-xxxx">
 				<label for="street">Street Address</label>
-				<input class="text_input" id="street" type="text" name="street">
+				<input class="text_input" id="street" type="text" name="street" placeholder="e.g. Main Street">
 				<label for="city">City</label>
-	 			<input class="text_input" id="city" type="text" name="city">
+	 			<input class="text_input" id="city" type="text" name="city" placeholder="e.g. Cleveland">
 				<label for="state">State</label>
 				<select id="state" name="state">
+					<optgroup label="States">
 						<option class="state_choice">Choose State</option>
 						<option value="AL">Alabama</option>
 						<option value="AK">Alaska</option>
@@ -92,25 +93,52 @@
 						<option value="WV">West Virginia</option>
 						<option value="WI">Wisconsin</option>
 						<option value="WY">Wyoming</option>
+					</optgroup>
+					<optgroup label="US Outlying Territories">
+						<option value="AS">American Samoa</option>
+						<option value="GU">Guam</option>
+						<option value="MP">Northern Mariana Islands</option>
+						<option value="PR">Puerto Rico</option>
+						<option value="UM">United States Minor Outlying Islands</option>
+						<option value="VI">Virgin Islands</option>
+					</optgroup>
+					<optgroup label="Armed Forces">
+						<option value="AA">Armed Forces Americas</option>
+						<option value="AP">Armed Forces Pacific</option>
+						<option value="AE">Armed Forces Europe</option>
+					</optgroup>	
 				</select>
 				<label for="zip">Zip Code</label>
-				<input class="text_input" id="zip" type="text" name="zip_code">
+				<input class="text_input" id="zip" type="text" name="zip_code" placeholder="xxxxx-xxxx">
+			</fieldset>
 				<hr>
+			<div class="bottom_section">
+				<fieldset>
 
 
-				<p class="select_head">Newsletter</p>
-				<p class="select_text">Select the newsletters you would like to recieve</p>
+					<legend class="select_head">Newsletter</legend>
+					<p class="select_text">Select the newsletters you would like to recieve</p>
 
-				<input id="html" type="checkbox" name="html" value="html_select" checked><p class="box">HTML News</p><br>
-				<input id="css" type="checkbox" name="css" value="css_select"><p class="box">CSS News</p><br>
-				<input id="javascript" type="checkbox" name="javascript" value="javascript_select"><p class="box">Javascript News</p><br>
+					<input class="check" id="html" type="checkbox" name="news_type" value="html_select" checked="">
+					<label class="check_label" for="html">HTML News</label><br>
+					<input class="check" id="css" type="checkbox" name="news_type" value="css_select">
+					<label class="check_label" for="css">CSS News</label><br>
+					<input class="check" id="javascript" type="checkbox" name="news_type" value="javascript_select">
+					<label class="check_label" for="javascript">Javascript News</label>
 
-				<p class="select_format">Newsletter format</p>
-				<input id="html_format" type="radio" name="html_format" value="html_format"><p class="box">HTML</p>
+					<p class="select_format">Newsletter format</p>
+					<input id="html_format" type="radio" name="format" value="html_format" checked>
+					<label class="check_label" for="html_format">HTML</label><br>
+					<input id="plain_format" type="radio" name="format" value="plain_format">
+					<label class="check_label" for="plain_format">Plain text</label>
+					<p class="select_text bot_text">Other topics you'd like to hear about</p>
+					<textarea id="text_box" name="user_input"></textarea>
+				</fieldset>
 			</div>
-
-		
+				<button type="submit"> Sign Up</button>
 			
+			<footer>Copyright The Code Review</footer>
+
 	
 		</form>
 	</div>
