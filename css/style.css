@@ -160,4 +160,12 @@ footer{
 	background-color: #f7f7f7;
 	margin-top: 15px;
 }
+/* -----------------------------------media query 768------------------------ */
+
+@media (min-width: 768px){
+	.main_content{
+		width: 60%;
+	}
+
+}
 
