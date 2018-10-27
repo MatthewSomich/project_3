@@ -132,18 +132,28 @@
 					<legend class="select_head">Newsletter</legend>
 					<p class="select_text">Select the newsletters you would like to recieve</p>
 
+				<div class="check_container">
 					<input class="check" id="html" type="checkbox" name="news_type" value="html_select" checked="">
-					<label class="check_label" for="html">HTML News</label><br>
+					<label class="check_label" for="html">HTML News</label>
+				</div>
+				<div class="check_container">
 					<input class="check" id="css" type="checkbox" name="news_type" value="css_select">
-					<label class="check_label" for="css">CSS News</label><br>
+					<label class="check_label" for="css">CSS News</label>
+				</div>
+				<div class="check_container">
 					<input class="check" id="javascript" type="checkbox" name="news_type" value="javascript_select">
 					<label class="check_label" for="javascript">Javascript News</label>
+				</div>
 
 					<p class="select_format">Newsletter format</p>
+				<div class="check_container">
 					<input id="html_format" type="radio" name="format" value="html_format" checked>
-					<label class="check_label" for="html_format">HTML</label><br>
+					<label class="check_label" for="html_format">HTML</label>
+				</div>
+				<div class="check_container">
 					<input id="plain_format" type="radio" name="format" value="plain_format">
 					<label class="check_label" for="plain_format">Plain text</label>
+				</div>
 					<p class="select_text bot_text">Other topics you'd like to hear about</p>
 					<textarea id="text_box" name="user_input"></textarea>
 				</fieldset>

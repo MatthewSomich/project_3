@@ -1,4 +1,4 @@
-/*=========================== BASE STYLES=====================================*/
+
 *{
 	margin: 0;
 	box-sizing: border-box;
@@ -104,9 +104,12 @@ input::placeholder {
   	padding-top: 15px;
   	padding-bottom: 10px;
 }
+.check_container{
+	display: flex;
+	padding-top: 5px;
+}
 
 .check_label{
-	display: inline;
 	font-size: .7rem;
   	margin-left: 5px;
   	color: grey;
