@@ -106,7 +106,7 @@ input::placeholder {
 }
 .check_container{
 	display: flex;
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 .check_label{
